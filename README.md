@@ -1,5 +1,22 @@
 # GCP MCP Application
 
+## Claude Desktop Integration
+
+To enable GCP management capabilities in Claude Desktop, add the following configuration to your Claude Desktop MCP configuration:
+
+```json
+{
+  "gcp-mcp": {
+    "command": "uvx",
+    "args": [
+      "gcp-mcp"
+    ]
+  }
+}
+```
+
+This configuration allows Claude to interact with your Google Cloud Platform resources through natural language commands.
+
 This application provides a comprehensive set of tools for interacting with Google Cloud Platform (GCP) services through the MCP (Model Calling Protocol) interface. It's designed to be used with AI assistants like Claude to provide a natural language interface to GCP services.
 
 ## Features
