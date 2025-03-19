@@ -2,7 +2,7 @@
 
 ## Claude Desktop Integration
 
-To enable GCP management capabilities in Claude Desktop, add the following configuration to your Claude Desktop MCP configuration:
+To enable GCP management capabilities in Claude Desktop, simply add the following configuration to your Claude Desktop MCP configuration:
 
 ```json
 {
@@ -15,7 +15,10 @@ To enable GCP management capabilities in Claude Desktop, add the following confi
 }
 ```
 
-This configuration allows Claude to interact with your Google Cloud Platform resources through natural language commands.
+That's it! No additional setup or credential manipulation is required. When you first ask Claude to interact with your GCP resources, a browser window will automatically open for you to authenticate and grant access. Once you approve the access, Claude will be able to manage your GCP resources through natural language commands.
+
+For example, you can start with something like:
+"Could you list my GCP projects?" or "Show me my compute instances"
 
 This application provides a comprehensive set of tools for interacting with Google Cloud Platform (GCP) services through the MCP (Model Calling Protocol) interface. It's designed to be used with AI assistants like Claude to provide a natural language interface to GCP services.
 
