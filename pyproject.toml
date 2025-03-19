@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gcp-mcp"
+version = "0.1.0"
+description = "MCP interface for Google Cloud Platform"
+readme = "README.md"
+requires-python = ">=3.11.8"
+dependencies = [
+    "httpx>=0.28.0",
+    "mcp>=1.3.0",
+    "google-cloud-resource-manager>=1.14.0",
+    "google-cloud-compute>=1.26.0",
+    "google-cloud-storage>=3.1.0",
+    "google-cloud-service-usage>=1.13.0",
+    "google-cloud-billing>=1.16.0",
+    "google-api-python-client>=2.163.0",
+    "google-cloud-monitoring>=2.22.0",
+    "google-cloud-logging>=3.9.0",
+    "google-cloud-container>=2.35.0",
+    "google-cloud-firestore>=2.16.0",
+    "google-cloud-bigtable>=2.19.0",
+    "google-cloud-spanner>=3.39.0",
+    "google-cloud-iam>=2.17.0",
+    "google-cloud-vpc-access>=1.4.0",
+    "google-cloud-asset>=3.25.0",
+    "google-auth>=2.16.0",
+    "google-auth-oauthlib>=1.2.0",
+    "google-auth-httplib2>=0.1.0"
+]
+
+[project.entry-points.console]
+gcp = "gcp_mcp:main"
+gcp-mcp = "gcp_mcp:main"
+
+[project.scripts]
+gcp-mcp = "gcp_mcp:main"
