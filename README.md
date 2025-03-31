@@ -78,4 +78,6 @@ pip install gcp-mcp
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](LICENSE) 
+
+Your contributions and issues are welcome !
